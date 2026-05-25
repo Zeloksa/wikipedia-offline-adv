@@ -30,7 +30,6 @@
 3. Select version **V1.0** and burn it to your M5Stack Cardputer.
 4. **CRITICAL:** Download the archive containing the 6.4 million article database from Google Drive:
 👉 **[Download Database (18.3 GB)](https://drive.google.com/file/d/1vk8ZYRW6EJnWbYxpt7XWHItsnzcVqdjU/view?usp=drive_link)**
-
    *(Note: Google Drive will say it cannot scan the file for viruses because it is too large. This is normal for heavy files. Click "Download anyway".)*
 5. Unpack the downloaded `.zip` archive. Ensure you have at least **18.3 GB** of free space.
 6. Move the files `index_ptr.bin`, `index_data.bin`, and all `dataX.bin` files **directly into the root directory** of your FAT32-formatted MicroSD card. 
