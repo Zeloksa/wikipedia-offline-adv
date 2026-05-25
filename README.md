@@ -28,7 +28,9 @@
 1. Open **M5Burner**.
 2. Search for `Wikipedia Offline ADV` or `Zeloksa`.
 3. Select version **V1.0** and burn it to your M5Stack Cardputer.
-4. **CRITICAL:** Download the archive containing the 6.4 million article database from the official repository: [GitHub/Zeloksa/wikipedia-offline-adv](https://github.com/Zeloksa/wikipedia-offline-adv).
+4. **CRITICAL:** Download the archive containing the 6.4 million article database from Google Drive:
+   👉 **[Download Database (18.3 GB)](https://drive.google.com/file/d/1vk8ZYRW6EJnWbYxpt7XWHItsnzcVqdjU/view?usp=drive_link)**
+   *(Note: Google Drive will say it cannot scan the file for viruses because it is too large. This is normal for heavy files. Click "Download anyway".)*
 5. Unpack the downloaded `.zip` archive. Ensure you have at least **18.3 GB** of free space.
 6. Move the files `index_ptr.bin`, `index_data.bin`, and all `dataX.bin` files **directly into the root directory** of your FAT32-formatted MicroSD card. 
 
@@ -80,7 +82,7 @@ If you make a typo (e.g., *"Einstien"* instead of *"Einstein"*), ELIZA will offe
 ## 🛑 Error Codes & Troubleshooting
 
 * **"CRITICAL ERROR: No SD card detected"**: Ensure your MicroSD card is clicked fully into the slot and is formatted to FAT32 (exFAT is not supported by default ESP32 libraries).
-* **"ERROR: Databanks missing or corrupted"**: You are missing `index_ptr.bin` or `index_data.bin` or `dataX.bin`. The OS cannot index the raw data without these files. Check your file transfers.
+* **"ERROR: Databanks missing or corrupted"**: You are missing `index_ptr.bin`, `index_data.bin`, or `dataX.bin`. The OS cannot index the raw data without these files. Check your file transfers.
 * **"[TRUNCATED: Memory limit reached]"**: The article exceeds the 32KB safe-RAM buffer limit. The OS protects itself from crashing by cutting off the very end of massive articles.
 
 ---
